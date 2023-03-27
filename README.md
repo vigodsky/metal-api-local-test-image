@@ -15,6 +15,7 @@ docker run -it --privileged \
 - Run container and generate ssh key
 - Add key to your github account
 - Add github to known hosts ```ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts```
-- go env -w GOPRIVATE=github.com/onmetal/
+- go env -w GOPRIVATE=github.com/
+- go env -w GOPROXY=direct
 - Run ```go mod tidy```
 - Run ``` make test```
